@@ -68,8 +68,11 @@ console.log(vozilo);
 //
 
 class Plovilo extends Vozilo {
+
 	vrstaPlovila;
+	
 	static VRSTA = ["Jahta", "Jedrenjak", "Fregata"];
+
 	constructor(vrstaPlovila,boja,tezina,brzina) {
         super("plovilo",boja,tezina,brzina);
 		if (typeof vrstaPlovila === "undefined") {
@@ -80,7 +83,9 @@ class Plovilo extends Vozilo {
 				"Vrsta plovila moze biti Jahta, Jedrenjak ili Fregata"
 			);
 		}
+
 		this.vrstaPlovila = vrstaPlovila;
+
 	}
 }
 
