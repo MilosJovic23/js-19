@@ -70,7 +70,7 @@ console.log(vozilo);
 class Plovilo extends Vozilo {
 
 	vrstaPlovila;
-	
+
 	static VRSTA = ["Jahta", "Jedrenjak", "Fregata"];
 
 	constructor(vrstaPlovila,boja,tezina,brzina) {
@@ -220,5 +220,5 @@ document.getElementById("napraviVozilo").addEventListener("click", function () {
 	let brojVrata = document.getElementById("vrata").value;
 	let gorivo = document.getElementById("gorivo").value;
 	vozila.push(new Vozilo("plava", izabranaVrsta));
-	console.log(vozila);
+
 });
